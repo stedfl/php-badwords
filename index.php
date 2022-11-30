@@ -35,12 +35,7 @@ p {
     <div class="container">
       <h1>Parola Censurata</h1>
       <p>Scrivi un paragrafo ed una parola da censurare</p>
-
-    <?php
-      $nome = $_GET['name'];
-      $cognome = $_GET['surname'];
-    ?>
-
+      
       <form action="./landing-page.php" method="GET">
         <input type="text" name="paragraph" placeholder="paragrafo">
         <input type="text" name="badword" placeholder="parola da censurare">
