@@ -15,16 +15,36 @@ $new_paragraph_length=strlen($new_paragraph);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
 </head>
+<style>
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: orange;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  span {
+    background-color: red;
+  }
+
+</style>
+
 <body>
-<h2>Il tuo paragrafo è:</h2>
-<p>"<?php echo $paragraph; ?>"</p>
+  <div class="container">
 
-<h2>La lunghezza del paragrafo è: <?php echo $paragraph_length; ?> </h2>
-<h3>La parola da censurare è: <?php echo $badword ?> </h3>
-<h3>Il nuovo paragrafo censurato è:</h3>
-<p>"<?php echo $new_paragraph; ?>"</p>
-<p>La lunghezza del paragrafo censurato è: <?php echo $new_paragraph_length ?> </p>
+    <h2>ORIGINALE</h2>
+    <h3>Il tuo paragrafo è:</h3>
+    <p>"<?php echo $paragraph; ?>"</p>
+    <h4>La lunghezza del paragrafo è: <?php echo $paragraph_length; ?> caratteri </h4>
+    <h4>La parola da censurare è: <span>"<?php echo $badword ?>"</span> </h4>
 
+    <H2>CENSURATO</H2>
+    <h3>Il tuo nuovo paragrafo censurato è:</h3>
+    <p>"<?php echo $new_paragraph; ?>"</p>
+    <p>La lunghezza del paragrafo censurato è:  <?php echo $new_paragraph_length ?> caratteri</p>
+
+  </div>
+  
 
   
 </body>
