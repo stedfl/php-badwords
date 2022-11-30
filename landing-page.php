@@ -23,6 +23,9 @@ $new_paragraph_length=strlen($new_paragraph);
     padding: 1rem;
     border-radius: 10px;
   }
+  h2 {
+    text-align: center;
+  }
   span {
     background-color: red;
   }
@@ -35,10 +38,10 @@ $new_paragraph_length=strlen($new_paragraph);
     <h2>ORIGINALE</h2>
     <h3>Il tuo paragrafo è:</h3>
     <p>"<?php echo $paragraph; ?>"</p>
-    <h4>La lunghezza del paragrafo è: <?php echo $paragraph_length; ?> caratteri </h4>
+    <p>La lunghezza del paragrafo è: <?php echo $paragraph_length; ?> caratteri </p>
     <h4>La parola da censurare è: <span>"<?php echo $badword ?>"</span> </h4>
 
-    <H2>CENSURATO</H2>
+    <h2>CENSURATO</h2>
     <h3>Il tuo nuovo paragrafo censurato è:</h3>
     <p>"<?php echo $new_paragraph; ?>"</p>
     <p>La lunghezza del paragrafo censurato è:  <?php echo $new_paragraph_length ?> caratteri</p>
