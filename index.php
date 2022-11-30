@@ -7,23 +7,23 @@
   <title>Badwords</title>
 </head>
 <body>
-  <h1>Questo è un file php</h1>
+  <h1>Form</h1>
+  <p>Scrivi un paragrafo ed una parola da censurare</p>
  
 
 
 
   <?php
-  echo 'ciao';
-  echo '<h2> Ciao con tag </h2>';
-  $prova_name='Stefania';
   $nome = $_GET['name'];
   $cognome = $_GET['surname'];
-  echo '<h3>Ciao ' . $prova_name . ', come stai?</h3>';
-  echo "<h4> Ciao $prova_name, come stai?</h4>";
-
   ?>
 
-<p>Benvenuta <?php echo $prova_name; ?> </p>
-<p>Benvenuta <?php echo $nome;?> <?php echo $cognome;?>  </p>
+
+<form action="./landing-page.php" method="GET">
+  <input type="text" name="paragraph" placeholder="paragrafo">
+  <input type="text" name="badword" placeholder="parola da censurare">
+  <button type="submit">Invia</button>
+
+</form>
 </body>
 </html>
